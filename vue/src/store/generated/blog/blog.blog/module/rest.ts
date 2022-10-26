@@ -23,6 +23,11 @@ export interface BlogComment {
   createdAt?: string;
 }
 
+export interface BlogMsgCreateCommentResponse {
+  /** @format uint64 */
+  id?: string;
+}
+
 export interface BlogMsgCreatePostResponse {
   /** @format uint64 */
   id?: string;
@@ -40,6 +45,9 @@ export interface BlogPost {
   id?: string;
   title?: string;
   body?: string;
+
+  /** @format int64 */
+  createdAt?: string;
 }
 
 export interface BlogQueryAllCommentResponse {

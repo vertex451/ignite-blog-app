@@ -33,6 +33,11 @@ export interface BlogMsgCreatePostResponse {
   id?: string;
 }
 
+export interface BlogMsgDeleteCommentResponse {
+  /** @format uint64 */
+  id?: string;
+}
+
 /**
  * Params defines the parameters for the module.
  */
